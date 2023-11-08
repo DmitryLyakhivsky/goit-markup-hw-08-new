@@ -6,6 +6,9 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
   line-height: 1.14;
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 h1,
@@ -40,5 +43,5 @@ address {
 }
 
 button {
-  border: none;
+  border: 0;
 }

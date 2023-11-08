@@ -1,9 +1,23 @@
 .work {
+  display: none;
   @extend %section;
   padding-top: 0;
 
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+
   &__title {
     @extend %title-main;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
   }
 
   &__items {

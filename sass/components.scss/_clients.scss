@@ -1,24 +1,50 @@
 .clients {
   @extend %section;
 
+  @media screen and (min-width: 1200px) {
+     padding-top: 94px;
+     padding-bottom: 94px;
+    }
+
   &__title {
     @extend %title-main;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
   }
 
   &__items {
     @extend %list;
-    display: flex;
-    gap: $card-set-gap;
-  }
+    
+    @media screen and (min-width: 480px) {
+      display: flex;
+      gap: $card-set-gap;
+      flex-wrap: wrap;
+      }
+    
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+      }
+    }
 
   &__item {
-    flex-basis: calc((100% - 5 * $card-set-gap) / 6);
+    flex-basis: calc((100% - $card-set-gap) / 2);
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 2 * $card-set-gap) / 3);
+    }
+    
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 5 * $card-set-gap) / 6);
+    }
   }
 
   &__link {
     display: flex;
     height: 92px;
-    width: 170px;
+    
     align-items: center;
     justify-content: center;
     color: $social-team-color;

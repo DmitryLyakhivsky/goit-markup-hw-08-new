@@ -4,6 +4,15 @@
   &__container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+    }
   }
 
   &__nav {
@@ -12,8 +21,14 @@
   }
 
   &__logo {
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 24px;
+      padding-bottom: 25px;
+      font-size: 26px;
+    }
 
     &--black {
       color: $secondary-black-color;
@@ -26,11 +41,23 @@
   display: flex;
   margin-left: 93px;
 
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
   &__item--current {
     color: $accent-color;
   }
 
-  &__item:not(:last-child) {
+  &__item:nth-child(1) {
+    margin-right: 51px;
+  
+    @media screen and (min-width: 1200px) {
+      margin-right: 53px;
+    }
+  }
+  
+  &__item:nth-child(2) {
     margin-right: 50px;
   }
 
@@ -72,8 +99,25 @@
   display: flex;
   margin-left: auto;
 
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+
   &__item:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 30px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
   }
 
   &__link {
@@ -85,6 +129,11 @@
     padding-top: 32px;
     padding-bottom: 32px;
 
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
     transition: color $time $transition-cubic;
 
     &:hover,
@@ -94,18 +143,32 @@
   }
 
   &__envelope {
-    width: 16px;
-    height: 12px;
+    width: 14px;
+    height: 10px;
     fill: currentColor;
+
+    @media screen and (min-width: 1200px) {
+      width: 16px;
+      height: 12px;
+    }
   }
 
   &__smartphone {
     width: 10px;
-    height: 16px;
+    height: 14px;
     fill: currentColor;
+
+    @media screen and (min-width: 1200px) {
+      width: 10px;
+      height: 16px;
+    }
   }
 
   &__icon--right {
-    margin-right: 10px;
+    margin-right: 8px;
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 10px;
+    }
   }
 }
