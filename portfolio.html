@@ -71,6 +71,9 @@
   <li class="mobile-menu__item">
     <a href="./portfolio.html" class="mobile-menu__link mobile-menu__link--current">Портфоліо</a>
   </li>
+  <li class="mobile-menu__item">
+    <a href="#" class="mobile-menu__link">Контакти</a>
+  </li>
   </ul>
   <div class="mobile-contacts">
     <ul class="contacts-menu">
@@ -124,23 +127,47 @@
           <li class="portfolio-card__item" data-category="website">
             <a class="portfolio-card__link" href="#">
               <div class="portfolio-card__overlay">
-                
-              <img src="./images/technocrat.jpg" alt="Ноутбук з картками">
+               
+                <picture>
+                <source
+                srcset="./images/techno_crack-desktop.jpg 1x,
+                ./images/techno_crack-desktop@2x.jpg 2x" 
+                media="(min-width: 1200px)" />
+                <source 
+                srcset="./images/techno_crack-tablet.jpg 1x, 
+                ./images/techno_crack-tablet@2x.jpg 2x"
+                media="(min-width: 768px)" />
+                <img
+                srcset="./images/techno_crack-mob.jpg 1x,
+                ./images/techno_crack-mob@2x.jpg 2x"
+                 src="./images/technocrat.jpg" alt="Ноутбук з картками">
+               </picture>
+
               <p class="portfolio-card__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                 функціоналу та сервісів. Все це дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.</p>
               </div>
-              <div class="portfolio-card__content">
+              <div class="portfolio-card__content portfolio-card__content--padding">
                 <h2 class="portfolio-card__subtitle">Технокряк</h2>
                 <p class="portfolio-card__description">Веб-сайт</p>
               </div>
             </a>
           </li>
 
-          <li class="portfolio-card__item">
+          <li class="portfolio-card__item" data-category="design">
             <a class="portfolio-card__link" href="#">
               <div class="portfolio-card__overlay">
-              <img src="./images/new_orleans_poster.jpg" alt="Два баскетболісти у стрибку">
+
+                <picture>
+                  <source srcset="./images/orlean-desktop.jpg 1x,
+                                ./images/orlean-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="./images/orlean-tablet.jpg 1x, 
+                                ./images/orlean-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                  <img srcset="./images/orlean-mob.jpg 1x,
+                                ./images/orlean-mob@2x.jpg 2x" src="./images/orlean-mob.jpg" alt="Два баскетболісти у стрибку">
+                </picture>
+
+              
               <p class="portfolio-card__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                 функціоналу та сервісів. Все це дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.</p>
@@ -152,10 +179,21 @@
             </a>
           </li>
 
-          <li class="portfolio-card__item">
+          <li class="portfolio-card__item" data-category="app">
             <a class="portfolio-card__link" href="#">
               <div class="portfolio-card__overlay">
-              <img src="./images/siafood_restaurant.jpg" alt="Логотип ресторану">
+
+              <picture>
+                <source srcset="./images/sea-desktop.jpg 1x,
+                ./images/sea-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/sea-tablet.jpg 1x, 
+                  ./images/sea-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                <img srcset="./images/sea-mob.jpg 1x,
+                  ./images/sea-mob@2x.jpg 2x" src="./images/sea-mob.jpg"
+                  alt="Логотип ресторану">
+              </picture>
+
+              
               <p class="portfolio-card__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                 функціоналу та сервісів. Все це дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.</p>
@@ -167,10 +205,20 @@
             </a>
           </li>
 
-          <li class="portfolio-card__item">
+          <li class="portfolio-card__item" data-category="marketing">
             <a class="portfolio-card__link" href="#">
               <div class="portfolio-card__overlay">
-              <img src="./images/project_prime.jpg" alt="Великі навушники">
+ 
+              <picture>
+                <source srcset="./images/prime-desktop.jpg 1x,
+                  ./images/prime-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/prime-tablet.jpg 1x, 
+                 ./images/prime-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                <img srcset="./images/prime-mob.jpg 1x,
+                  ./images/prime-mob@2x.jpg 2x" src="./images/prime-mob.jpg" alt="Великі навушники">
+              </picture>
+
+              
               <p class="portfolio-card__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                 функціоналу та сервісів. Все це дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.</p>
@@ -182,10 +230,20 @@
             </a>
           </li>
 
-          <li class="portfolio-card__item">
+          <li class="portfolio-card__item" data-category="app">
             <a class="portfolio-card__link" href="#">
               <div class="portfolio-card__overlay">
-              <img src="./images/boxing_project.jpg" alt="Дві коробки">
+
+              <picture>
+                <source srcset="./images/boxes-desktop.jpg 1x,
+                                ./images/boxes-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/boxes-tablet.jpg 1x, 
+                               ./images/boxes-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                <img srcset="./images/boxes-mob.jpg 1x,
+                                ./images/boxes-mob@2x.jpg 2x" src="./images/boxes-mob.jpg" alt="Дві коробки">
+              </picture>
+
+              
               <p class="portfolio-card__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                 функціоналу та сервісів. Все це дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.</p>
@@ -197,10 +255,20 @@
             </a>
           </li>
 
-          <li class="portfolio-card__item">
+          <li class="portfolio-card__item" data-category="website">
             <a class="portfolio-card__link" href="#">
               <div class="portfolio-card__overlay">
-              <img src="./images/inspiration_has.jpg" alt="Дизайн сайту на моніторі комп'ютера">
+
+              <picture>
+                <source srcset="./images/inspiration-desktop.jpg 1x,
+                  ./images/inspiration-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/inspiration-tablet.jpg 1x, 
+                  ./images/inspiration-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                <img srcset="./images/inspiration-mob.jpg 1x,
+                  ./images/inspiration-mob@2x.jpg 2x" src="./images/inspiration-mob.jpg" alt="Дизайн сайту на моніторі комп'ютера">
+              </picture>
+
+              
               <p class="portfolio-card__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                 функціоналу та сервісів. Все це дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.</p>
@@ -212,10 +280,21 @@
             </a>
           </li>
 
-          <li class="portfolio-card__item">
+          <li class="portfolio-card__item" data-category="design">
             <a class="portfolio-card__link" href="#">
               <div class="portfolio-card__overlay">
-              <img src="./images/limited_edition.jpg" alt="Відкрита книга з ілюстраціями">
+
+              <picture>
+                <source srcset="./images/limit-desktop.jpg 1x,
+                                ./images/limit-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/limit-tablet.jpg 1x, 
+                                ./images/limit-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                <img srcset="./images/limit-mob.jpg 1x,
+                                ./images/limit-mob@2x.jpg 2x" src="./images/limit-mob.jpg"
+                  alt="Відкрита книга з ілюстраціями">
+              </picture>
+
+              
               <p class="portfolio-card__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                 функціоналу та сервісів. Все це дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.</p>
@@ -227,10 +306,21 @@
             </a>
           </li>
 
-          <li class="portfolio-card__item">
+          <li class="portfolio-card__item" data-category="marketing">
             <a class="portfolio-card__link" href="#">
               <div class="portfolio-card__overlay">
-              <img src="./images/project_lab.jpg" alt="Бірка з логотипом компанії">
+
+                <picture>
+                  <source srcset="./images/lab-desktop.jpg 1x,
+                    ./images/lab-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="./images/lab-tablet.jpg 1x, 
+                  ./images/lab-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                  <img srcset="./images/lab-mob.jpg 1x,
+                    ./images/lab-mob@2x.jpg 2x" src="./images/lab-mob.jpg"
+                    alt="Бірка з логотипом компанії">
+                </picture>
+
+              
               <p class="portfolio-card__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                 функціоналу та сервісів. Все це дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.</p>
@@ -242,10 +332,20 @@
             </a>
           </li>
 
-          <li class="portfolio-card__item">
+          <li class="portfolio-card__item" data-category="app">
             <a class="portfolio-card__link" href="#">
               <div class="portfolio-card__overlay">
-              <img src="./images/growing_business.jpg" alt="Людина набирає текст на ноутбуці">
+
+              <picture>
+                <source srcset="./images/growing-desktop.jpg 1x,
+                  ./images/growing-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/growing-tablet.jpg 1x, 
+                 ./images/growing-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                <img srcset="./images/growing-mob.jpg 1x,
+                  ./images/growing-mob@2x.jpg 2x" src="./images/growing-mob.jpg" alt="Людина набирає текст на ноутбуці">
+              </picture>
+
+              
               <p class="portfolio-card__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                 функціоналу та сервісів. Все це дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.</p>
@@ -264,7 +364,8 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__flex">
-        <div class="footer__contacts"><a class="footer__logo logo" lang="en" href="./index.html">Web<span
+        <div class="footer__contacts">
+          <a class="footer__logo logo" lang="en" href="./index.html">Web<span
               class="footer__logo--white">Studio</span></a>
           <!-- Адрес компании -->
           <address>
@@ -283,6 +384,7 @@
             </ul>
           </address>
         </div>
+
         <div class="footer__social">
           <h2 class="footer__subtitle">Приєднуйтесь</h2>
           <ul class="footer__social-items">
@@ -325,6 +427,7 @@
             <label for="subscribe-email" class="footer__form-label"> ПІДПИСАТИСЯ НА РОЗСИЛКУ</label>
             <input class="footer__form-email" type="email" id="subscribe-email" name="subscribe-email" placeholder="E-mail" required />
           </div>
+
           <button class="footer__form-button" type="submit">Підписатися
             <svg class="footer__form-svg">
               <use href="./images/icons.svg#icon-send"></use>
@@ -335,6 +438,11 @@
       </div>
     </div>
   </footer>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <script src="js/filter.js" type="module"></script>
   <script>
     (() => {
       document
